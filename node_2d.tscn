@@ -1,9 +1,13 @@
-[gd_scene format=3 uid="uid://ucxhutkx621n"]
+[gd_scene load_steps=2 format=3 uid="uid://ucxhutkx621n"]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource type="Script" path="res://Main.gd" id="1_hwwdq"]
 
-[node name="Label" type="Label" parent="."]
-offset_right = 1152.0
-offset_bottom = 647.0
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("Title")]
+script = ExtResource("1_hwwdq")
+Title = NodePath("Title")
+
+[node name="Title" type="Label" parent="."]
+offset_right = 660.0
+offset_bottom = 151.0
 theme_override_font_sizes/font_size = 110
 text = "Hello, Godot"
